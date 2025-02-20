@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #111;
+  color: white;
+}
+
+.tetris-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(20, 30px);
+  gap: 2px;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: #222;
+  border-radius: 4px;
+  transition: background 0.1s ease-in-out;
+}
+
+.cell-1 { background: cyan; }
+.cell-2 { background: blue; }
+.cell-3 { background: orange; }
+.cell-4 { background: yellow; }
+.cell-5 { background: green; }
+.cell-6 { background: purple; }
+.cell-7 { background: red; }
+
+.game-over {
+  font-size: 24px;
+  color: red;
+  margin-top: 10px;
+}
